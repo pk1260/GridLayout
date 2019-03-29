@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body, h3 {
+  padding: 0;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+h1, h3 {
+  font-family: Roboto;
+}
+
+a {
+  padding: 2em 0;
+  color: #47a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header {
+  padding: 2em;
+}
+
+article {
+  padding: 1em;
+}
+
+header, aside {
+  background-color: rgba(220, 220, 220, 0.5);
+}
+
+footer {
+  padding: 2em;
+}
+
+h1, .tagline {
+  color: #47a;
+}
+
+section img {
+  max-width: 100%;
+}
+
+footer {
+  background-color: #A9A9A9;
+  padding: 2em;
+}
+
+section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-bottom: .2em;
+}
+
+.nummer {
+  background-color: #47a;
+  color: #fff;
+  font-size: 3em;
+  width: 1.2em;
+  text-align: right;
+  padding: .2em;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside a {
+  text-decoration: none;
+  padding: 2em;
+  display: block;
+}
+
+aside a:hover {
+  background-color: #47a;
+  color: #fff;
+  cursor: pointer;
+}
+
+aside h3 {
+  padding: 2em;
+  background-color: #47a;
+  color: #fff;
+}
+
+#validatie img {
+  height: 1em;
+  width: auto;
+  border: 0;
+  margin: 0 .3em;
+}
+
+/* MEDIA QUERYS */
+@media screen and (min-width: 760px) {
+  .afb {
+    display: block;
+    background-image: url('../img/cypher.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "kop kop"
+      "t10 t9"
+      "t8 t7"
+      "t8 t6"
+      "afb t5"
+      "afb t4"
+      "t3 aside"
+      "t2 aside"
+      "t1 aside"
+      "foot foot";
+  }
+
+  header {
+    grid-area: kop;
+  }
+
+  .c10 {
+    grid-area: t10;
+  }
+
+  .c9 {
+    grid-area: t9;
+  }
+
+  .c8 {
+    grid-area: t8;
+  }
+
+  .c7 {
+    grid-area: t7;
+  }
+
+  .c6 {
+    grid-area: t6;
+  }
+
+  .afb {
+    grid-area: afb;
+  }
+
+  .c5 {
+    grid-area: t5;
+  }
+
+  .c4 {
+    grid-area: t4;
+  }
+
+  .c3 {
+    grid-area: t3;
+  }
+
+  .c2 {
+    grid-area: t2
+  }
+
+  .c1 {
+    grid-area: t1;
+  }
+
+  footer {
+    grid-area: foot;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .split h2 {
+    grid-column: span 2;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "kop kop kop"
+      "t10 t9 afb"
+      "t8 t7 afb"
+      "t8 t6 afb"
+      "aside t5 t5"
+      "aside t4 t3"
+      "aside t2 t1"
+      "foot foot foot";
+  }
+
+  header {
+    grid-area: kop;
+  }
+
+  .c10 {
+    grid-area: t10;
+  }
+
+  .c9 {
+    grid-area: t9;
+  }
+
+  .c8 {
+    grid-area: t8;
+  }
+
+  .c7 {
+    grid-area: t7;
+  }
+
+  .c6 {
+    grid-area: t6;
+  }
+
+  .afb {
+    grid-area: afb;
+  }
+
+  .c5 {
+    grid-area: t5;
+  }
+
+  .c4 {
+    grid-area: t4;
+  }
+
+  .c3 {
+    grid-area: t3;
+  }
+
+  .c2 {
+    grid-area: t2
+  }
+
+  .c1 {
+    grid-area: t1;
+  }
+
+  footer {
+    grid-area: foot;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .split h2 {
+    grid-column: span 2;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .afb {
+    display: block;
+    background-image: url('../img/cypher.jpg');
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .pic {
+    display: block;
+    background-image: url('../img/imperial_guard.jpg');
+    background-size: cover;
+  }
+
+  body {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "kop kop kop kop kop"
+    "pic pic t10 t10 afb"
+    "pic pic t9 t9 afb"
+    "t8 t7 t6 t6 aside"
+    "t5 t4 t4 t3 aside"
+    "t2 t2 t1 t1 aside"
+    "foot foot foot foot foot";
+  }
+
+  header {
+    grid-area: kop;
+  }
+
+  .pic {
+    grid-area: pic;
+  }
+
+  .afb {
+    grid-area: afb;
+  }
+
+  .c10 {
+    grid-area: t10;
+  }
+
+  .c9 {
+    grid-area: t9;
+  }
+
+  .c8 {
+    grid-area: t8;
+  }
+
+  .c7 {
+    grid-area: t7;
+  }
+
+  .c6 {
+    grid-area: t6;
+  }
+
+  .c5 {
+    grid-area: t5;
+  }
+
+  .c4 {
+    grid-area: t4;
+  }
+
+  .c3 {
+    grid-area: t3;
+  }
+
+  .c2 {
+    grid-area: t2
+  }
+
+  .c1 {
+    grid-area: t1;
+  }
+
+  footer {
+    grid-area: foot;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .split h2 {
+    grid-column: span 2;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+}
